@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Open Other Kambi",
+  "version": "1.0",
+  "description": "Opent de andere kambi wanneer je op Ctrl + Shift + X drukt.",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "openNewTab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "MacCtrl+Shift+X"
+      },
+      "description": "Opent de andere kambi wanneer je op Ctrl + Shift + X drukt."
+    }
+  }
+}
