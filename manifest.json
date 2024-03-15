@@ -1,12 +1,11 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Open Other Kambi",
   "version": "1.0",
   "description": "Opent de andere kambi wanneer je op Ctrl + Shift + X drukt.",
   "permissions": ["tabs"],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "commands": {
     "openNewTab": {
